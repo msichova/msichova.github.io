@@ -1,3 +1,4 @@
+
 .mainPage
 {
 background-color: #d4dedd;
@@ -124,4 +125,13 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     padding-left: 1%;
     align-items:center;
 }
+}
+
+.educationImg
+{
+    border: 2px dotted #001833;
+    border-radius: 0%;
+    box-shadow: 10px 10px 50px 40px #c0c0c0;
+    width: 70%;
+    height: auto;
 }
