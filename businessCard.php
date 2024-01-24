@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <link href='./page-styles/style-page.css' rel='stylesheet'>
     <header>
         <div class='businessCardPart'>
