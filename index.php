@@ -11,7 +11,7 @@
     <body class='mainPage'>
         <main class='mainLayout'>
                 <div class='leftLayout'>
-                    <?php include_once('./businessCard.php'); ?>
+                    <!--<?php include_once('./businessCard.php'); ?> -->
                     <?php include_once('./navBar.php'); ?>
                 </div>   
     
