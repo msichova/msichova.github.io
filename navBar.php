@@ -1,0 +1,13 @@
+
+    <link href='./page-styles/style-page.css' rel='stylesheet'>
+    <header>
+        <div class='menuPart' id='navigation'>
+            <ul class='menuBar'>
+                <li><a class='buttonNavigation' id='homeButton' href="./index.php">Home</a></li>
+                <li><a class='disabled' id='aboutButton' href="./about.php">About</a></li>
+                <li><a class='disabled' id='educationButton' href="./education.php">Education</a></li>
+                <li><a class='disabled' id='skillsButton' href="./skills.php">Skills</a></li>
+                <li><a class='disabled' id='projectsButton' href="./projects.php">Projects</a></li>
+            </ul>
+        </div>
+    </header>

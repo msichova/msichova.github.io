@@ -9,9 +9,16 @@
         <title>Portfolio</title>
     </head>
     <body class='mainPage'>
-        <p >
-        <h1>Marina Sichova</h1>
-        <h3>Junior Software Developer</h3>
-    </p>
+        <main class='mainLayout'>
+                <div class='leftLayout'>
+                    <?php include_once('./businessCard.php'); ?>
+                    <?php include_once('./navBar.php'); ?>
+                </div>   
+    
+
+                <div class='rightLayout'>
+                    
+                </div>
+        </main>
     </body>
 </html>

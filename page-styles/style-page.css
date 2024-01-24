@@ -6,4 +6,122 @@ color: #001833;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: 100% 100%;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+.mainLayout
+{
+    display: flex;
+    flex-direction : row;
+    flex-wrap : nowrap;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.leftLayout
+{
+    display: flex;
+    flex-direction : column;
+    width: 30%;
+    flex-wrap : wrap;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 6%;
+    padding-right: 2%;
+}
+
+.rightLayout
+{
+    display: flex;
+    flex-direction : column;
+    width: 60%;
+    flex-wrap : wrap;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 6%;
+    padding-left: 2%;
+}
+
+/*Business card part*/
+.businessCardPart
+{
+    padding-top: 0%;
+    padding-bottom: -5%;
+}
+.skillsBusinessCard
+{
+    font-weight: lighter;
+    padding-left: 3%;
+}
+/*Navigation bar part*/
+.menuPart
+{
+    padding-top: 2%;
+    padding-bottom: 0%;
+}
+.menuBar
+{
+    list-style:none;
+}
+.buttonNavigation
+{
+    text-decoration: none;
+    color: #001833;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-weight: normal;
+    font-size:normal;
+}
+.disabled
+{
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: #c0c0c0;
+}
+
+@media only screen and (max-width: 700px)
+{
+    .mainLayout
+{
+    display: flex;
+    flex-direction : column;
+    flex-wrap : nowrap;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 1%;
+    padding-right: 1%;
+    align-items: stretch;
+}
+
+.leftLayout
+{
+    display: flex;
+    flex-direction : column;
+    width: -webkit-fill-available;
+    flex-wrap : wrap;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 1%;
+    padding-right: 1%;
+    align-items:center;
+}
+#navigation
+{
+    visibility:hidden;
+    display:none;
+}
+.rightLayout
+{
+    display: flex;
+    flex-direction : column;
+    width: -webkit-fill-available;
+    flex-wrap : wrap;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    padding-right: 1%;
+    padding-left: 1%;
+    align-items:center;
+}
 }
