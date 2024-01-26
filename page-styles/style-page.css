@@ -66,13 +66,22 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
 {
     list-style:none;
 }
-.buttonNavigation
+.buttonNavigation, .choosedNovigation
 {
     text-decoration: none;
     color: #001833;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
-    font-weight: normal;
+    font-weight: bolder;
     font-size:normal;
+}
+.buttonNavigation:hover, .choosedNovigation
+{
+    font-size:large;
+    text-decoration: underline;
+}
+.choosedNovigation
+{
+    margin-left: 5%;
 }
 .disabled
 {
@@ -82,51 +91,50 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
     color: #c0c0c0;
 }
 
-@media only screen and (max-width: 700px)
+@media only screen and (max-width: 700px) 
 {
     .mainLayout
 {
     display: flex;
     flex-direction : column;
-    flex-wrap : nowrap;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    padding-left: 1%;
-    padding-right: 1%;
-    align-items: stretch;
+    flex-wrap : wrap;
+    align-items:flex-start;
+    padding:0%;
+    padding-left:3%;
+    padding-right:3%;
+    width: 94%;
 }
 
-.leftLayout
+.leftLayout, .rightLayout
 {
     display: flex;
     flex-direction : column;
-    width: -webkit-fill-available;
+    width:-webkit-fill-available;
     flex-wrap : wrap;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    padding-left: 1%;
-    padding-right: 1%;
-    align-items:center;
+    padding: 0%;
+    align-items:stretch;
 }
-#navigation
+.menuBar, .navigationLink
 {
-    visibility:hidden;
-    display:none;
+    display:-webkit-flex;
 }
-.rightLayout
+.menuPart, .menuBar
 {
-    display: flex;
-    flex-direction : column;
-    width: -webkit-fill-available;
-    flex-wrap : wrap;
-    padding-top: 1%;
-    padding-bottom: 0%;
-    padding-right: 1%;
-    padding-left: 1%;
-    align-items:center;
+    margin:0%;
+    padding:0%;
+    align-self:flex-start;
+    display:-webkit-flex;
+}
+.businessCardPart, .skillsBusinessCard
+{
+    margin:0%;
+    padding:0%;
+}
+.navigationLink
+{
+    padding: 2%;
 }
 }
-
 .educationImg
 {
     border: 2px dotted #001833;
