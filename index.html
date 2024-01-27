@@ -7,29 +7,54 @@
         <meta name='author' content='Marina Sichova, msichova'>
         <link href='./page-styles/style-page.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
         <title>Portfolio</title>
     </head>
     <body class='mainPage'>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+       
+        <nav class="navbar sticky-top border-bottom border-body navbar-expand-lg mainPage">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">msichova </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./education.html">Education</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./education2.html">Education2</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./skills.html">Skills</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./projects.html">Projects</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+        </nav>
         <main class='mainLayout'>
                 <div class='leftLayout'>
                     <div class='businessCardPart'>
-                        <h1>Marina Sichova<br>
-                            Junior Back-End Software Developer</h1>
-                        <h4 class='skillsBusinessCard'>C#, JavaScript, PHP, Java <br>
+                        <h2>Marina Sichova<br>
+                            Junior Back-End Software Developer</h2>
+                        <h5 class='skillsBusinessCard'>C#, JavaScript, PHP, Java <br>
                             ASP.NET CORE: API, Web App<br>
                             SQL, mySQL,<br>
                             noSQL(MongoDB Atlas and Azure Cashe for Redis) 
-                        </h4>
-                    </div>
-
-                    <div class='menuPart' id='navigation'>
-                        <ul class='menuBar'>
-                            <li class='navigationLink'><a class='choosedNovigation' id='homeButton' href="./index.html">Home</a></li>
-                            <li class='navigationLink'><a class='buttonNavigation' id='aboutButton' href="./about.html">About</a></li>
-                            <li class='navigationLink'><a class='buttonNavigation' id='educationButton' href="./education.html">Education</a></li>
-                            <li class='navigationLink'><a class='disabled' id='skillsButton' href="./skills.html">Skills</a></li>
-                            <li class='navigationLink'><a class='disabled' id='projectsButton' href="./projects.html">Projects</a></li>
-                        </ul>
+                        </h5>
                     </div>
                 </div>   
     
@@ -43,7 +68,8 @@
                         <img class="eachLogo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuget/nuget-original-wordmark.svg" />
                         <img class="eachLogo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
                         <img class="eachLogo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-                        <img class="eachLogo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
+                        <!--<img class="eachLogo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />-->
+                        <img class="eachLogo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
                         <img class="eachLogo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
                         <img class="eachLogo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original-wordmark.svg" />
                         <img class="eachLogo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
