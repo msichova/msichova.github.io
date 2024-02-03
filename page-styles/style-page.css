@@ -1,188 +1,137 @@
-
-.mainPage, .accordion-body
+/*back-ground*/
+body, html
 {
-background-color: #d4dedd;
-background-image : linear-gradient(to top right, #a9c3b6, #cedfdf, #b7d1d3, #a6c3ce, #8fb8ca);
-color: #001833;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: 100% 100%;
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
-}
+  background-color: #d4dedd;
+  background-image: url(pexels-jonas-svidras-785418.jpg);
 
-.mainLayout
+ /* background-image:linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255,0.3)), url(pexels-jonas-svidras-785418.jpg);*/
+
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100%;
+  width: auto;
+
+ /* background-image : linear-gradient(to top right, #a9c3b6, #cedfdf, #b7d1d3, #a6c3ce, #8fb8ca);
+  color: #001833;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;*/
+}
+.blurBackGround
 {
-    display: flex;
-    flex-direction : row;
-    flex-wrap : nowrap;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 1%;
-    padding-right: 1%;
-}
+    background: rgba(139, 186, 244, 0.3); 
+    -webkit-backdrop-filter: blur(7px) brightness(80%);/**/
+    backdrop-filter: blur(7px) brightness(80%);/**/
 
+    
+    min-height:  100%;
+    align-self: stretch;
+    height:max-content;
+    width:auto;
+}
+/*Containers for content on page*/
+.pageContentContainer
+{
+    display:flex;
+    flex-direction:row;
+    width: auto;
+    padding: 2%;
+    margin: auto;
+    float:center;
+    flex-wrap: nowrap;
+    
+}
 .leftLayout
 {
     display: flex;
     flex-direction : column;
-    width: 30%;
+    width: 40%;
     flex-wrap : wrap;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    padding-left: 6%;
-    padding-right: 2%;
 }
-
 .rightLayout
 {
     display: flex;
     flex-direction : column;
     width: 60%;
     flex-wrap : wrap;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-right: 6%;
-    padding-left: 2%;
 }
 
-/*Business card part*/
-.businessCardPart
+/*Skills with logo*/
+.skillsPart
 {
-    padding-top: 0%;
-    padding-bottom: -5%;
-}
-.skillsBusinessCard
-{
-    font-weight: lighter;
-    padding-left: 3%;
-}
-
-.logos
-{
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    
+    font-weight:lighter;
 }
 .eachLogo
 {
-    padding:2%;
-    width:15%; 
+    padding:1%;
+    width:12%; 
     height:auto;
 }
-.listTicks
+
+
+/*Accordion styles*/
+.accordion {
+    background-color: rgba(255, 255, 255, 0.3) ;/*rgba(139, 186, 244, 0.3)*/
+
+    -webkit-backdrop-filter: brightness(80%);
+    backdrop-filter: brightness(80%);
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgba(139, 186, 244, 0.8); 
+    font-weight: bold;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+  }
+
+  .listStyle
+  {
+    list-style: '✓  ';
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+  }
+
+  @media only screen and (max-width: 700px) 
 {
-    list-style: none;
-}
-.listTicks li:before
-{
-    content: '✓';
-    font-weight: bolder;
-    color:#2929a3;
-    padding:3%;
-}
-.detailsEducation
-{
-    font-weight: bolder;
-}
-@media only screen and (max-width: 700px) 
-{
-    .mainLayout
-{
+  .pageContentContainer
+  {
     display: flex;
     flex-direction : column;
     flex-wrap : wrap;
-    align-items:flex-start;
-    padding:0%;
-    padding-left:3%;
-    padding-right:3%;
-    width: 94%;
-}
+    align-items:center;
+    padding:2%;
+    width: auto;
+    
+  }
 
-.leftLayout, .rightLayout
-{
+  .leftLayout, .rightLayout
+  {
     display: flex;
     flex-direction : column;
     width:-webkit-fill-available;
     flex-wrap : wrap;
-    padding: 0%;
+    padding: 5%;
     align-items:stretch;
-}
-.menuBar, .navigationLink
-{
-    display:-webkit-flex;
-}
-.menuPart, .menuBar
-{
-    margin:0%;
-    padding:0%;
-    align-self:flex-start;
-    display:-webkit-flex;
-}
-.businessCardPart, .skillsBusinessCard
-{
-    margin:0%;
-    padding:0%;
-}
-.navigationLink
-{
-    padding: 2%;
-}
+  }
 
-.eachLogo
-{
-    width:20%; 
+  .eachLogo
+  {
+    width:15%; 
     height:auto;
-}
-}
-.educationImg
-{
-    border: 2px solid #001833;
-    border-radius: 0%;
-    filter: drop-shadow(20px 10px 40px #c0c0c0);
-    width: 100%;
-    height: auto;
-}
-.tryTo
-{
-    background-color: red;
-    color:green;
-}
-
-.bodyUnderDevelopment, html
-{
-    height: 100%;
-}
-.pageUnderDevelopment
-{
-    background-image: url(1.jpg); /*pexels-arina-krasnikova-5710667.jpg*/
-    
-     filter: blur(3px);
-    -webkit-filter: blur(3px);
-  
-    /*Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-}
-.textUnderDevelopment {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
   }
-  .linksUnderDevelopment{
-    color:white;
-  }
+}
