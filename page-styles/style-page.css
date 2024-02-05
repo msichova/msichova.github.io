@@ -105,7 +105,34 @@ body, html
     list-style: '✓  ';
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
   }
-
+  .myNavBarStyle
+{
+  background-color: rgba(139, 186, 244, 0.9) !important;
+  box-shadow: 0px 10px 30px rgba(0, 24, 51, 0.702); 
+  /*box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.5);#000000b3*/
+}
+.nav-item:active, .active
+{
+    color:black;
+    font-weight:bold;
+    padding: 0.1%;
+}
+@media only screen and (min-width: 992px)
+{
+  .nav-item
+  {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+  }
+  .nav-item:hover, .nav-item:active, .active
+  {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    box-shadow: 0px 0px 40px rgb(255, 255, 255);
+    border-radius: 20px;
+   /* color:black;
+    font-weight:bold;
+    padding: 0.1%;*/
+  }
+}
   @media only screen and (max-width: 700px) 
 {
   .pageContentContainer
@@ -135,3 +162,4 @@ body, html
     height:auto;
   }
 }
+
