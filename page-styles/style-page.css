@@ -1,7 +1,7 @@
 /*back-ground*/
 body, html
 {
-  background-color: #d4dedd;
+  background-color: rgb(139, 186, 244);
   background-image: url(pexels-jonas-svidras-785418.jpg);
 
  /* background-image:linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255,0.3)), url(pexels-jonas-svidras-785418.jpg);*/
@@ -30,7 +30,38 @@ body, html
     align-self: stretch;
     height:max-content;
     width:auto;
+
+   /* display: flex;
+    flex-direction: column;
+    gap: 0%;
+    justify-content: space-between;*/
+
+    display: grid;
+    grid:
+    "header" auto
+    "main" 1fr
+    "footer" auto
+    / 100%;
+    gap: 8px;
+    grid-auto-flow: row dense;
 }
+.header { 
+  grid-area: header; 
+  align-self: start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.main { grid-area: main; }
+.footer { 
+  grid-area: footer; 
+  align-self:end;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+
 /*Containers for content on page*/
 .pageContentContainer
 {
@@ -39,9 +70,7 @@ body, html
     width: auto;
     padding: 2%;
     margin: auto;
-    float:center;
     flex-wrap: nowrap;
-    
 }
 .leftLayout
 {
@@ -105,6 +134,8 @@ body, html
     list-style: '✓  ';
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
   }
+
+  /*My Navigation Bar styles*/
   .myNavBarStyle
 {
   background-color: rgba(139, 186, 244, 0.9) !important;
@@ -163,3 +194,155 @@ body, html
   }
 }
 
+@media only screen and (max-width: 500px)
+{
+  footer
+  {
+    min-height: 80px !important;
+    padding: 0% !important;
+    margin: 0% !important;
+
+    justify-content: flex-start !important;
+    align-items:stretch !important;
+  }
+  .footerDevide
+  {
+    flex-direction: column !important;
+    justify-content:stretch;
+   /* background-color: red;*/
+    min-height:max-content !important;
+    max-height: max-content !important;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .footerLeft
+{
+  width: 100%;
+  justify-content:stretch;
+  flex-wrap: nowrap;
+  /*background-color: blue;*/
+  min-height:max-content;
+  max-height: max-content;
+  
+  padding: 0%;
+  margin: 0%;
+}
+.footerRight
+{
+  width: 100%;
+  justify-content: left !important;
+  flex-wrap: nowrap;
+  /*background-color: green;*/
+  min-height:max-content;
+  max-height: max-content;
+
+  width: 100% !important;
+  min-width:max-content ;
+  padding: 0%;
+  margin: 0%;
+}
+.logoInFooter
+{
+  padding: 0%;
+  margin: 0%;
+}
+}
+
+/*Footer Part*/
+footer
+{
+  display:block;
+  position: -webkit-sticky;
+  position: sticky;
+  margin:0%;
+  padding:0%;
+
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+
+  background-color: rgba(139, 186, 244, 0.9) ;
+  box-shadow: 10px 0px 30px rgba(0, 24, 51, 0.702); 
+  border-top:1px solid #dee2e6;;
+
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+  font-size:smaller;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 55px;
+}
+.thirdPartiesLinks, .thirdPartiesLinks:hover
+{
+  text-decoration: none;
+  color: #001833;
+  font-size: smaller;
+}
+.thirdPartiesLinks:hover
+{
+  text-shadow: 0px 0px 20px #001833;
+  font-size: small;
+  font-weight: bold;
+}
+.footerItems
+{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row;
+  width: 100%;
+
+  color:#001833;
+  font-size: smaller;
+  font-weight:lighter;
+  font-style: oblique;
+}
+.footerDevide
+{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 1%;
+  margin-bottom: 0%;
+}
+.footerLeft
+{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 60%;
+}
+.leftFooterItem
+{
+  padding-right: 3%;
+}
+.footerRight
+{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: right; 
+  width: 40%;
+}
+.rightFooterItem
+{
+  padding-right: 2%;
+}
+.logoInFooter
+{
+  height: 20px;
+  width: auto;
+  padding: 0%;
+  margin: 0%;
+}
+.logoInFooter:hover 
+{
+  height:23px;
+ box-shadow:  0px 0px 45px 3px #001833;
+}

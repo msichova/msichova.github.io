@@ -1,7 +1,8 @@
 
 function includeHtmlDoc(inElement, page)
 {
-    $("#" + inElement).load(page);
+    $(document.getElementById(inElement)).load(page);
+   /* $("#" + inElement).load(page);*/
 }
 
 function accordion()
@@ -25,4 +26,19 @@ function accordion()
             }
         });
     }
+}
+
+/*Currently not working as expected */
+function navBar(navigation)
+{
+     document.getElementsByClassName('nav-item').forEach(element =>
+        {
+        if(element.id === navigation){
+            element.classList.add('active');
+        }
+        else
+        {
+            element.classList.remove('active');
+        }
+    });
 }

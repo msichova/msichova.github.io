@@ -6,7 +6,7 @@
       <meta name='description' content='portfolio, web, development, software development'>
       <meta name='author' content='Marina Sichova, msichova'>
       <!--Script-->
-      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
       <!--Script to insert navigaion bar-->
       <script src="jscript.js"></script>
       <!--My Css stiles-->
@@ -22,12 +22,14 @@
 
       <title>Portfolio</title>
     </head>
-    <body >
+    <body>
         <div class = "blurBackGround">
 
-            <nav class="navbar sticky-top border-bottom navbar-expand-lg myNavBarStyle" id="navigation"><script></script></nav>
-      
-           <div>
+            <div class="header">
+                <nav class="navbar sticky-top border-bottom navbar-expand-lg myNavBarStyle" id="navigation"></nav>
+            </div>
+
+           <div class="main">
                 <main class="pageContentContainer">
 
                     <div class='leftLayout'>
@@ -39,10 +41,13 @@
                     </div>
 
                 </main>
+           </div>
+
+
+           <div class="footer">
+                <footer id="footer" name="footer"></footer>    
             </div>
-
-
-            <footer id="footer" name="footer"></footer>
+            
         </div>
 
         <script>
