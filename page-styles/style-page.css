@@ -42,8 +42,10 @@ body, html
     "main" 1fr
     "footer" auto
     / 100%;
-    gap: 8px;
+    gap: 0px;
     grid-auto-flow: row dense;
+
+    grid-template-columns:100%;
 }
 .header { 
   grid-area: header; 
@@ -51,8 +53,16 @@ body, html
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  bottom: 0;
 }
-.main { grid-area: main; }
+.main { 
+  grid-area: main; 
+  min-width:100%; 
+  max-width: 100%;
+  align-content: stretch;
+  align-items: stretch;
+
+}
 .footer { 
   grid-area: footer; 
   align-self:end;
@@ -71,6 +81,7 @@ body, html
     padding: 2%;
     margin: auto;
     flex-wrap: nowrap;
+    position: static;
 }
 .leftLayout
 {
@@ -102,7 +113,7 @@ body, html
 
 /*Accordion styles*/
 .accordion {
-    background-color: rgba(255, 255, 255, 0.3) ;/*rgba(139, 186, 244, 0.3)*/
+    background-color: rgba(255, 255, 255, 0.3) ;
 
     -webkit-backdrop-filter: brightness(80%);
     backdrop-filter: brightness(80%);
@@ -119,7 +130,7 @@ body, html
   }
   
   .active, .accordion:hover {
-    background-color: rgba(139, 186, 244, 0.8); 
+    background-color: rgba(255, 255, 255, 0.3);
     font-weight: bold;
   }
   
@@ -136,11 +147,14 @@ body, html
   }
 
   /*My Navigation Bar styles*/
-  .myNavBarStyle
+  .myNavBarStyle, .header
 {
   background-color: rgba(139, 186, 244, 0.9) !important;
   box-shadow: 0px 10px 30px rgba(0, 24, 51, 0.702); 
   /*box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.5);#000000b3*/
+
+  position: sticky;
+  top: 0;
 }
 .nav-item:active
 {
@@ -171,9 +185,9 @@ body, html
     display: flex;
     flex-direction : column;
     flex-wrap : wrap;
-    align-items:center;
+    align-items:stretch;
     padding:2%;
-    width: auto;
+    width: 100%;
     
   }
 
@@ -182,9 +196,11 @@ body, html
     display: flex;
     flex-direction : column;
     width:-webkit-fill-available;
+    width:100%;
     flex-wrap : wrap;
     padding: 5%;
     align-items:stretch;
+    align-content: stretch;
   }
 
   .eachLogo
@@ -209,7 +225,6 @@ body, html
   {
     flex-direction: column !important;
     justify-content:stretch;
-   /* background-color: red;*/
     min-height:max-content !important;
     max-height: max-content !important;
     padding: 0%;
