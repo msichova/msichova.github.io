@@ -111,10 +111,16 @@ body, html
     width:12%; 
     height:auto;
 }
+.container-in-right-layout
+{
+   background-color: rgba(255, 255, 255, 0.2);
+   text-align: left;
+   padding: 2%;
 
-
+}
 /*Accordion styles*/
-.accordion {
+.accordion, .accordion-skills 
+{
     background-color: rgba(255, 255, 255, 0.3) ;
 
     -webkit-backdrop-filter: brightness(80%);
@@ -130,12 +136,24 @@ body, html
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
     transition: 0.4s;
   }
-  
-  .active, .accordion:hover {
+  /*accordion for allSkillsIcons.html*/
+  .accordion-skills
+  {
+    
+    width: 90%;
+    font-size: 25px;
+  }
+
+  .active, .accordion:hover{
     background-color: rgba(255, 255, 255, 0.3);
     font-weight: bold;
   }
   
+  .accordion-skills:hover, .active-skills{
+    font-size: 25px;
+    background-color: rgba(139, 186, 244, 0.9);
+  }
+
   .panel {
     padding: 0 18px;
     display: none;
@@ -147,6 +165,8 @@ body, html
     list-style: '✓  ';
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
   }
+
+
 
   /*My Navigation Bar styles*/
   .myNavBarStyle, .header
@@ -214,6 +234,12 @@ body, html
 
 @media only screen and (max-width: 500px)
 {
+  .leftLayout, .rightLayout
+  {
+    width: 100%;
+    padding: 2%;
+    margin: 2%;
+  }
   footer
   {
     min-height: 80px !important;

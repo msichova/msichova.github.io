@@ -15,14 +15,16 @@ function accordion()
         accardion[index].addEventListener("click", 
         function() 
         {
-            this.classList.toggle("active");
+            this.classList.toggle('active');
+            
             var panel = this.nextElementSibling;
-            if (panel.style.display === "block") 
+            if (panel.style.display === 'block') 
             {
-                panel.style.display = "none";
-            } else 
+                panel.style.display = 'none';
+            } 
+            else 
             {
-                panel.style.display = "block";
+                panel.style.display = 'block';
             }
         });
     }
@@ -42,3 +44,68 @@ function navBar(navigation)
         }
     });
 }
+
+function accordionForSkills()
+{
+    var accardion = document.getElementsByClassName("accordion-skills");
+    var index;
+                                
+    for (index = 0; index < accardion.length; index++) 
+    {
+        accardion[index].addEventListener("click", 
+        function() 
+        {
+            this.classList.toggle('active-skills');
+            
+            var panel = this.nextElementSibling;
+            if (panel.style.display === 'block') 
+            {
+                panel.style.display = 'none';
+            } 
+            else 
+            {
+                panel.style.display = 'block';
+            }
+        });
+    }
+}
+
+function selfPrintitngText(elementId, delay, text)
+{
+    var element = document.getElementById(elementId);
+    var carret = '_';
+    var print_text = function(textToTrim, element, delay)
+    {
+        if(textToTrim.length > 0)
+        {
+            if(textToTrim.length != 0)
+            {
+                element.innerHTML = element.innerHTML.substring(0, element.innerHTML.length-1); 
+            }
+
+            if(textToTrim[0] != '<')
+            {
+                element.innerHTML += textToTrim[0] + carret;
+            }
+            
+            if(textToTrim[0] === '<')
+            {
+                textToTrim = textToTrim.substring(4, textToTrim.length + 1);
+                element.innerHTML += '<br>' + textToTrim[0] + carret;
+            }
+        
+            setTimeout(function()
+            {
+                print_text(textToTrim.slice(1), element, delay);
+            }, delay );
+        }
+        else
+        {
+            element.innerHTML = text;
+        }
+    }
+    print_text(text, element, delay);
+    
+}
+
+
