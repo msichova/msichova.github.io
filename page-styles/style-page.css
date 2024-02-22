@@ -163,13 +163,17 @@ body, html
     background-color: rgba(139, 186, 244, 0.9);
   }
 
-  .panel {
+  .panel, .panel-skills 
+  {
     padding: 0 18px;
     display: none;
     overflow: hidden;
     font-size: 15px;
   }
-
+.panel-skills
+{
+  display: block;
+}
   .header-accordion-panel
   {
     font-weight: bold;

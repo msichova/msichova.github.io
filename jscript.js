@@ -20,12 +20,17 @@ function accordion()
             var panel = this.nextElementSibling;
             if (panel.style.display === 'block') 
             {
+                var char = '<b>︾</b>';
                 panel.style.display = 'none';
+                this.innerHTML = (this.innerHTML.substring(0, this.innerHTML.length - char.length)) +  char;
             } 
             else 
             {
+                var char = '<b>︽</b>';
                 panel.style.display = 'block';
+                this.innerHTML = (this.innerHTML.substring(0, this.innerHTML.length - char.length)) +  char;
             }
+            
         });
     }
 }
@@ -56,16 +61,19 @@ function accordionForSkills()
         function() 
         {
             this.classList.toggle('active-skills');
-            
+            var char = '';
             var panel = this.nextElementSibling;
             if (panel.style.display === 'block') 
             {
+                char = '<b>︾</b>';
                 panel.style.display = 'none';
             } 
             else 
             {
+                char = '<b>︽</b>';
                 panel.style.display = 'block';
             }
+            this.innerHTML = (this.innerHTML.substring(0, (this.innerHTML.length - char.length))) + char;
         });
     }
 }
