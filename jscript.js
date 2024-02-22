@@ -108,4 +108,20 @@ function selfPrintitngText(elementId, delay, text)
     
 }
 
+function changeDownloadLogo(elementId, delay)
+{
+    var element = document.getElementById(elementId);
+
+    if(element.parentElement.onmouseenter)
+    {
+        element.src = "./icons8-downloads-folder.gif";
+        
+        setTimeout(function()
+        {
+            element.src = "./icons8-downloads-folder-50.png";
+        }, (delay));
+        
+    }
+}
+
 

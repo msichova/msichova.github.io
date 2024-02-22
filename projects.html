@@ -41,35 +41,41 @@
                         <button type="button" class="accordion">BooksStock.API: ASP.NET Core, MongoDB Atlas and in Second version of Project added: Azure SQL</button>
                         <div class="panel">
 
-                            <div>
-                                <h5>Light Version of API project</h5>
-                                <p>This project using MongoDB Atlas Shared replica set</p>
-                                <p>For API Security: API version headers</p>
-                                <a href="./BooksStock.API/win-x64.zip" download="win-x64.zip"><button type="button" title="Windows-x64">win-x64</button></a>
-                                <a href="./BooksStock.API/win-arm64.zip" download="win-arm64.zip"><button type="button" title="Windows-arm64">win-arm64</button></a>
-                                <a href="./BooksStock.API/osx-x64.zip" download="osx-x64.zip"><button type="button" title="macOS-x64">osx-x64</button></a>
-                                <a href="./BooksStock.API/osx-arm64.zip" download="osx-arm64.zip"><button type="button" title="macOS-arm64">osx-arm64</button></a>
-                                <a href="./BooksStock.API/portable.zip" download="portable.zip"><button type="button" title="Require .NET platform">portable</button></a>
+                            <button type="button" class="sub-accordion accordion">Light Version of API project</button>
+                            <div class="panel">
+                                <p><b class="header-accordion-panel">In this version of project used:</b> MongoDB Atlas Shared replica set for storing/retriving books collection</p>
+                                <p ><b class="header-accordion-panel">For API Security:</b> API version headers.</p>
+                                <a href="./BooksStock.API/win-x64.zip" download="win-x64.zip"><button onmouseenter="changeDownloadLogo('logo1', 2000);" class="download-projects-button" type="button" title="Windows-x64"><img id="logo1" width="15" height="15" src="./icons8-downloads-folder-50.png" alt="download-logo"/> win-x64</button></a>
+                                <a href="./BooksStock.API/win-arm64.zip" download="win-arm64.zip"><button onmouseenter="changeDownloadLogo('logo2', 2000);" class="download-projects-button" type="button" title="Windows-arm64"><img id="logo2" width="15" height="15" src="./icons8-downloads-folder-50.png" alt="download-logo"/> win-arm64</button></a>
+                                <a href="./BooksStock.API/osx-x64.zip" download="osx-x64.zip"><button onmouseenter="changeDownloadLogo('logo3', 2000);" class="download-projects-button" type="button" title="macOS-x64"><img id="logo3" width="15" height="15" src="./icons8-downloads-folder-50.png" alt="download-logo"/> osx-x64</button></a>
+                                <a href="./BooksStock.API/osx-arm64.zip" download="osx-arm64.zip"><button onmouseenter="changeDownloadLogo('logo4', 2000);" class="download-projects-button" type="button" title="macOS-arm64"><img id="logo4" width="15" height="15" src="./icons8-downloads-folder-50.png" alt="download-logo"/> osx-arm64</button></a>
+                                <a href="./BooksStock.API/portable.zip" download="portable.zip"><button onmouseenter="changeDownloadLogo('logo5', 2000);" class="download-projects-button" type="button" title="Require .NET platform"><img id="logo5" width="15" height="15" src="./icons8-downloads-folder-50.png" alt="download-logo"/> portable</button></a>
+                             
+                                <div>
+                                    <p class="header-accordion-panel">User Guid:</p>
+                                    <p>To Download in pdf: <a onmouseenter="changeDownloadLogo('logo6', 2000);" class="link-accordion-panel" href="./BooksStock.API/User Guids/light_version_api_User_Guide.pdf" download="api_User_Guide.pdf" title="User Guid for API light version"><img id="logo6" src="./icons8-downloads-folder-50.png" alt="download-logo" height="15" width="15"/> User Guid for Light Version</a></p>
+                                    <embed src="./BooksStock.API/User Guids/light_version_api_User_Guide.pdf" type="application/pdf" width="100%" height="500px"></embed>
+                                </div>
+
                             </div>
 
-                            <div hidden>
-                                <h5>Second Version of API project</h5>
-                                <p>This project using MongoDB Atlas Shared replica set</p>
-                                <p>For API Security: API version headers</p>
-                                <a href="" download="win-x64.zip"><button type="button" title="Windows-x64">win-x64</button></a>
-                                <a href="" download="win-arm64.zip"><button type="button" title="Windows-arm64">win-arm64</button></a>
-                                <a href="" download="osx-x64.zip"><button type="button" title="macOS-x64">osx-x64</button></a>
-                                <a href="" download="osx-arm64.zip"><button type="button" title="macOS-arm64">osx-arm64</button></a>
-                                <a href="" download="portable.zip"><button type="button" title="Require .NET platform">portable</button></a>
-                            </div>
 
-                            <div>
-                                <h5>User Guid:</h5>
-                                <p>To Download in pdf: <a hidden href="" download="./BooksStock.API/User Guids/light_version_api_User_Guide.pdf" title="User Guid for API light version">Light Version</a> or <a hidden href="" download="API_User_Guid.pdf" title="User Guid for API second version">Second Version</a></p>
-                                <embed src="./BooksStock.API/User Guids/light_version_api_User_Guide.pdf" type="application/pdf" width="100%" height="500px"><a href="./BooksStock.API/User Guids/light_version_api_User_Guide.pdf">open in another window</a></embed>
-                            
-                                <p hidden>To Download in pdf: <a href="light_version_api_User_Guid.pdf" download="BooksStock_User_Guide.pdf" title="User Guid for API light version">Light Version</a> or <a href="" download="API_User_Guid.pdf" title="User Guid for API second version">Second Version</a></p>
-                                <embed hidden src="./BooksStock.API/User Guids/light_version_api_User_Guide.pdf" type="application/pdf" width="100%" height="500px"><a href="./BooksStock.API/User Guids/light_version_api_User_Guide.pdf">open in another window</a></embed>
+                            <button hidden type="button" class="sub-accordion accordion">Seccure Version of API project</button>
+                            <div class="panel">
+                                <p><b class="header-accordion-panel">In this version of project used:</b> MongoDB Atlas Shared replica set for storing/retriving books collection and Azure SQL for storing user accounts.</p>
+                                <p ><b class="header-accordion-panel">For API Security:</b> API version headers, JWT tokens, API key and Azure SQL for Authorization and Authentication</p>
+                                <a href="" download="win-x64.zip"><button onmouseenter="changeDownloadLogo('logo7', 2000);" class="download-projects-button" type="button" title="Windows-x64"><img id="logo7" width="15" height="15" src="./icons8-downloads-folder-50.png" alt="download-logo"/> win-x64</button></a>
+                                <a href="" download="win-arm64.zip"><button onmouseenter="changeDownloadLogo('logo8', 2000);" class="download-projects-button" type="button" title="Windows-arm64"><img id="logo8" width="15" height="15" src="./icons8-downloads-folder-50.png" alt="download-logo"/> win-arm64</button></a>
+                                <a href="" download="osx-x64.zip"><button onmouseenter="changeDownloadLogo('logo9', 2000);" class="download-projects-button" type="button" title="macOS-x64"><img id="logo9" width="15" height="15" src="./icons8-downloads-folder-50.png" alt="download-logo"/> osx-x64</button></a>
+                                <a href="" download="osx-arm64.zip"><button onmouseenter="changeDownloadLogo('logo10', 2000);" class="download-projects-button" type="button" title="macOS-arm64"><img id="logo10" width="15" height="15" src="./icons8-downloads-folder-50.png" alt="download-logo"/> osx-arm64</button></a>
+                                <a href="" download="portable.zip"><button onmouseenter="changeDownloadLogo('logo11', 2000);" class="download-projects-button" type="button" title="Require .NET platform"><img id="logo11" width="15" height="15" src="./icons8-downloads-folder-50.png" alt="download-logo"/> portable</button></a>
+                             
+                                <div>
+                                    <p class="header-accordion-panel">User Guid:</p>
+                                    <p>To Download in pdf: <a onmouseenter="changeDownloadLogo('logo12', 2000);" class="link-accordion-panel" href="" download="api_User_Guide.pdf" title="User Guid for API secure version"><img id="logo12" src="./icons8-downloads-folder-50.png" alt="download-logo" height="15" width="15"/> User Guid for API Secure Version</a></p>
+                                    <embed src="" type="application/pdf" width="100%" height="500px"></embed>
+                                </div>
+
                             </div>
 
                         
