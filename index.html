@@ -22,12 +22,12 @@
 
       <title>Portfolio</title>
     </head>
-    <body>
+    <body id="index.html">
 <div class="blur-back-ground">
             <div class="header">
                 <nav class="navbar sticky-top navbar-expand-lg my-nav-bar-style" id="navigation"></nav>
+                
             </div>
-
            <div class="main">
                 <main class="page-content-container">
 
@@ -72,7 +72,9 @@
             </div>
 </div>
         <script>
-            includeHtmlDoc("navigation", "./navBar.html"); 
+           // includeHtmlDoc("navigation", "./navBar.html"); 
+            addNavBar('navigation');
+
             includeHtmlDoc("skills", "./allSkillsIcons.html"); 
             accordion();
             includeHtmlDoc("footer", "./footer.html"); 

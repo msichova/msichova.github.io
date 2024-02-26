@@ -98,6 +98,11 @@ body, html
   font-family: Flamenco;
   font-weight: lighter !important;
 }
+.nav-bar-text:hover
+{
+  color:#B88A13 !important;
+}
+
 .navbar-brand
 {
   line-height: 30%;
@@ -117,6 +122,11 @@ body, html
 nav
 {
   border-bottom: 2px solid #B88A13;
+}
+.navbar-toggler
+{
+  /*background-color:#B88A13 !important;*/
+  border:2px solid #B88A13 !important;
 }
 /*Skills with logo*/
 .each-logo
@@ -180,9 +190,7 @@ nav
   }
   .active, .accordion:hover
   {
-
-    color:#B88A13
-
+    color:#B88A13 !important;
   }
   
   .accordion-skills:hover, .active-skills

@@ -2,7 +2,6 @@
 function includeHtmlDoc(inElement, page)
 {
     $(document.getElementById(inElement)).load(page);
-   /* $("#" + inElement).load(page);*/
 }
 
 function accordion()
@@ -33,21 +32,6 @@ function accordion()
             
         });
     }
-}
-
-/*Currently not working as expected */
-function navBar(navigation)
-{
-     document.getElementsByClassName('nav-item').forEach(element =>
-        {
-        if(element.id === navigation){
-            element.classList.add('active');
-        }
-        else
-        {
-            element.classList.remove('active');
-        }
-    });
 }
 
 function accordionForSkills()
@@ -132,4 +116,22 @@ function changeDownloadLogo(elementId, delay)
     }
 }
 
+function addNavBar(elementId)
+{
+    var element = document.getElementById(elementId);
 
+    element.innerHTML="<div  class='container-fluid'><a class='navbar-brand active' href='./index.html'>msichova </a><button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'><span class='navbar-toggler-icon'></span></button><div class='collapse navbar-collapse' id='navbarNavDropdown'><ul class='navbar-nav'><li class='nav-item' id='index.html' ><a class='nav-link nav-bar-text'  href='./index.html'>Home</a></li><li class='nav-item' id='education.html'><a class='nav-link nav-bar-text' href='./education.html' >Education</a></li><li class='nav-item' id='resume.html'><a class='nav-link nav-bar-text' href='./resume.html' >Resume</a></li><li class='nav-item' id='projects.html'><a class='nav-link nav-bar-text' href='./projects.html'>Projects</a></li></ul></div></div>";
+
+   const navItems = Array.from(document.getElementsByClassName('nav-item'));
+   navItems.forEach(el => 
+    {
+    if(el.id === document.body.id)
+    {
+        el.firstChild.classList.add('active');
+    }
+    else
+    {
+        el.firstChild.classList.remove('active');
+    }
+   });
+}
