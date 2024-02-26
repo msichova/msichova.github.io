@@ -110,7 +110,7 @@ function changeDownloadLogo(elementId, delay)
         
         setTimeout(function()
         {
-            element.src = "./icons8-downloads-folder-50.png";
+            element.src = "./7124171_folder_download_icon.png";
         }, (delay));
         
     }

@@ -233,14 +233,18 @@ nav
   {
     color:#DDDDDD;
     font-family: 'Flamenco';
-    font-size: 22pt;
+    font-size: 20pt;
     font-weight: bold;
   }
-  .link-accordion-panel, .link-accordion-panel:hover
+  .link-accordion-panel 
   {
-    color:#001833;
+    color:#dddddd;
+    font-family: 'Flamenco';
   }
-
+.link-accordion-panel:hover
+{
+  color:#B88A13;
+}
   .list-style
   {
     list-style: '✓  ';
@@ -249,13 +253,13 @@ nav
 
   .download-projects-button
 {
-  background-color: #8bbaf4;
-  color:#404040;
+  background-color: rgba(0, 24, 51, 0.702);
+  color:#dddddd;
   font-weight: bold;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+  font-family:'Cascadia Code';
   font-size: 15px;
-  border-color: #404040;
-  box-shadow: 0px 10px 30px rgba(255, 252, 252, 0.1); 
+  border-color: #dddddd;
+  box-shadow: 0px 10px 30px rgba(221, 221, 221, 0.1); 
 
   width: 100%;
 
@@ -264,9 +268,9 @@ nav
 
 .download-projects-button:hover
 {
-  border-color: #001833;
-  color: #001833;
-  box-shadow: 0px 10px 30px rgba(0, 24, 51, 0.702); 
+  border-color: #b88a13;
+  color: #B88A13;
+  box-shadow: 0px 10px 30px rgba(184, 138, 19, 0.702); 
 }
 
 .aria-download-buttons
