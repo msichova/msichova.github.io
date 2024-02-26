@@ -23,40 +23,41 @@
       <title>Portfolio</title>
     </head>
     <body>
-        <div class = "blurBackGround">
-
+<div class="blur-back-ground">
             <div class="header">
-                <nav class="navbar sticky-top border-bottom navbar-expand-lg myNavBarStyle" id="navigation"></nav>
+                <nav class="navbar sticky-top navbar-expand-lg my-nav-bar-style" id="navigation"></nav>
             </div>
 
            <div class="main">
-                <main class="pageContentContainer">
+                <main class="page-content-container">
 
-                    <div class='leftLayout'>
+                    <div class='left-layout'>
                         <div id="skills"><script></script></div>
                     </div>   
 
-                    <div class='rightLayout'>
+                    <div class='right-layout'>
                         <div class="container-in-right-layout">
-                            <div><h2>Welcome to my Portfolio pages!</h2></div>
-                            <div><t><b>Experience in:</b> <br><i id="experience"></i> </t> </div>
+                            <div><h2 class="main-page-header">Welcome to my Portfolio pages!</h2></div>
+                            <div class="selft-printing-area"><p class="header-for-self-printing-text">Experience in:  <p class="selft-printing-text" id="experience"></p> </p></div>
                             <br>
                             <div> 
-                                <h4>About me:</h4>
-                                <p>Junior <b>Software Developer</b> in the beginning of career.</p>
-                                <p>Have completed at TAFE the <b>Diploma of Information Technology</b> (Advanced Programming).</p>
-                                <p>At my study in TAFE experienced in <b>developing projects</b> as, but not limited to:
-                                    <ul class="listStyle">
+                                <h4 class="general-heading">About me:</h4>
+                                <p class="general-text">
+                                <p class="general-text">Junior <b>Software Developer</b> in the beginning of career.</p>
+                                <p class="general-text">Have completed at TAFE the <b>Diploma of Information Technology</b> (Advanced Programming).</p>
+                                <p class="general-text">At my study in TAFE experienced in <b>developing projects</b> as, but not limited to:
+                                    <ul class="list-style general-text">
                                         <li><b>API's</b> with ASP.NET CORE MVC, .NET Multi-platform App UI's</li>
                                         <li>Windows <b>multi-application system</b>: third party library, .Net console application and GUI Windows form</li>
                                         <li>Responsive multi-page <b>websites</b>, utilising: Bootstrap framework, WCAG, CSS, PHP, PHP.PDO and JavaScript</li>
                                         <li>etc.</li>
                                     </ul>
                                 </p>
-                                <p>Most of all projects development followed <b>Agile Methodology</b> and recorded, maintaned using <b>GitHub</b>.</p>
-                                <p>My current main priority is to gain <b>working experience</b> in the Information Technology industry as a <b>junior software developer</b>.</p>
-                                <p>Also, in plan to get in <b>university</b> as part time study for <b>bachelor`s in computer science and information technology</b>.</p>
+                                <p class="general-text">Most of all projects development followed <b>Agile Methodology</b> and recorded, maintaned using <b>GitHub</b>.</p>
+                                <p class="general-text">My current main priority is to gain <b>working experience</b> in the Information Technology industry as a <b>junior software developer</b>.</p>
+                                <p class="general-text">Also, in plan to get in <b>university</b> as part time study for <b>bachelor`s in computer science and information technology</b>.</p>
                                 
+                                </p>
                             </div>
                             <script>$.when(selfPrintitngText("experience", 100, "C#, API, .NET, ASP.NET CORE, MVC, SQL, MONGODB Atlas, GUI Windows forms, console applications"));</script>
                         </div>
@@ -69,9 +70,7 @@
            <div class="footer">
                 <footer id="footer" name="footer"></footer>    
             </div>
-            
-        </div>
-
+</div>
         <script>
             includeHtmlDoc("navigation", "./navBar.html"); 
             includeHtmlDoc("skills", "./allSkillsIcons.html"); 
