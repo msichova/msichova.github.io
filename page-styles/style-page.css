@@ -1,15 +1,13 @@
-/*back-ground*/
 body, html
 {
-  height: 100%;
-  width: auto;
-  scroll-behavior: smooth;
-
-  background-attachment:fixed;
-
-  background-repeat: repeat;
-  background-size: cover;
-  background-image: url(../background.jpg);
+    height: 100%;
+    width: auto;
+    scroll-behavior: smooth;
+  
+    background-attachment:fixed;
+  
+    background-repeat: repeat;
+    background-size: cover;
 }
 .blur-back-ground
 {
@@ -36,21 +34,20 @@ body, html
   align-content: stretch;
   align-items: stretch;
   z-index: 1;
- /* background-color: #c0c0c0c0;*/
 }
 .footer { 
-  grid-area: footer; 
-  align-self:end;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  bottom: 0;
-  z-index: 9999;
-
-  bottom: 0;
-  z-index: 9999;
-}
-/*Containers for content on page*/
+    grid-area: footer; 
+    align-self:end;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+  
+    bottom: 0;
+    z-index: 9999;
+  }
+  /*Containers for content on page*/
 .page-content-container
 {
     display:flex;
@@ -85,24 +82,21 @@ body, html
     top: 0;
     bottom: 0;
     z-index: 9999;
-  }
+}
 .my-nav-bar-style, .header
 {
-  background-color: #1D1D1D !important;
-  position: sticky;
+    position: sticky;
   top: 0;
 }
 .navbar-brand, .nav-bar-text
 {
-  color: #DDDDDD !important;
-  font-family: Flamenco;
-  font-weight: lighter !important;
+    font-family: Flamenco;
+    font-weight: lighter !important;
 }
-.nav-bar-text:hover
+.nav-bar-text:hover, .navbar-brand
 {
   color:#B88A13 !important;
 }
-
 .navbar-brand
 {
   line-height: 30%;
@@ -125,7 +119,6 @@ nav
 }
 .navbar-toggler
 {
-  /*background-color:#B88A13 !important;*/
   border:2px solid #B88A13 !important;
 }
 /*Skills with logo*/
@@ -135,7 +128,6 @@ nav
     width:12%; 
     height:auto;
     font-size:larger;
-    color:#dddddd;
 }
 .container-in-right-layout
 {
@@ -145,16 +137,15 @@ nav
    margin-top: 0%;
    margin-bottom: 0%;
 
-  background-color: rgba(0, 24, 51, 0.22);
-  border: 1px solid rgba(0, 24, 51, 0.22);
-  /* background-color: rgba(29, 29, 29, 0.222);
-  border: 1px solid rgba(29,29,29, 0.22);*/
-
-   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
    -webkit-backdrop-filter: blur(1.7px);
    backdrop-filter: blur(1.7px);
    border-radius: 16px;
+
+    background-color: rgba(0, 24, 51, 0.22);
+    border: 1px solid rgba(0, 24, 51, 0.22);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
 }
+
 /*Accordion styles*/
 .accordion
 {
@@ -168,102 +159,87 @@ nav
   padding: 18px;
   width: 100%;
 }
-  /*accordion for allSkillsIcons.html*/
-  .accordion-skills
-  {
-    width: 100%;
-    margin-right: 1%;
+ /*accordion for allSkillsIcons.html*/
+ .accordion-skills
+ {
+   width: 100%;
+   margin-right: 1%;
+   border-top-left-radius: 16px;
+   border-top-right-radius: 16px;
 
-    background-color: rgba(0, 24, 51, 0.22);
-    /* background-color: rgba(29, 29, 29, 0.222);*/
-
-     border-top-left-radius: 16px;
-     border-top-right-radius: 16px;
-  }
-
-  .sub-accordion
-  {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    font-size: 16px;
-    font-style: oblique;
-  }
-  .active, .accordion:hover
-  {
-    color:#B88A13 !important;
-  }
-  
-  .accordion-skills:hover, .active-skills
-  {
-    color:#B88A13;
-  }
-
-.panel, .panel-skills 
+   background-color: rgba(0, 24, 51, 0.22);
+ }
+ .sub-accordion
+ {
+   margin-top: 1%;
+   margin-bottom: 1%;
+   font-size: 16px;
+   font-style: oblique;
+ }
+ .active, .accordion:hover
+ {
+   color:#B88A13 !important;
+ }
+ 
+ .accordion-skills:hover, .active-skills
+ {
+   color:#B88A13;
+ }
+ .panel
+ {
+  display: none;
+ }
+ .panel, .panel-skills 
 {
   padding: 0 5%;
-  display: none;
   overflow: hidden;
 }
 .panel-skills
 {
   display: block;
 
-  /*background-image : linear-gradient(to bottom, rgba(29, 29, 29, 0.9), rgba(29,29,29, 0.7));*/
-
+  border-top: none !important;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+   
   background-color: rgba(0, 24, 51, 0.22);
   border: 1px solid rgba(0, 24, 51, 0.22);
-  /* background-color: rgba(29, 29, 29, 0.222);
-  border: 1px solid rgba(29,29,29, 0.22);*/
 
-   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-   -webkit-backdrop-filter: blur(1.7px);
-   backdrop-filter: blur(1.7px);
-   /*border-radius: 16px;*/
-   border-bottom-left-radius: 16px;
-   border-bottom-right-radius: 16px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
 }
-  
 .header-accordion
 {
-  color:#DDDDDD;
   font-family: 'Flamenco';
   font-size: 20pt;
 }
 .header-accordion-panel
   {
-    color:#DDDDDD;
     font-family: 'Flamenco';
     font-size: 20pt;
     font-weight: bold;
   }
   .link-accordion-panel 
   {
-    color:#dddddd;
     font-family: 'Flamenco';
   }
-.link-accordion-panel:hover
+  .link-accordion-panel:hover
 {
   color:#B88A13;
 }
-  .list-style
-  {
-    list-style: '✓  ';
-    /*font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';*/
-  }
-
-  .download-projects-button
+.list-style
 {
-  background-color: rgba(0, 24, 51, 0.702);
-  color:#dddddd;
+    list-style: '✓  ';
+}
+.download-projects-button
+{
   font-weight: bold;
   font-family:'Cascadia Code';
   font-size: 15px;
-  border-color: #dddddd;
-  box-shadow: 0px 10px 30px rgba(221, 221, 221, 0.1); 
-
   width: 100%;
-
   justify-self: stretch;
+
+  background-color: #1d1d1d;
+  color: #DDDDDD;
 }
 
 .download-projects-button:hover
@@ -271,7 +247,6 @@ nav
   border-color: #b88a13;
   color: #B88A13;
 }
-
 .aria-download-buttons
 {
   display: flex;
@@ -290,58 +265,52 @@ nav
   margin: 0%;
 }
 
-  /*Texts styles*/
-  .main-page-header
-  {
+/*#region of SomeTextsStyles*/
+.main-page-header
+{
     font-family: 'Flamenco';
     font-size: 22pt;
     line-height: 100%;
     letter-spacing: 0pt;
     font-weight: lighter;
-    color:#DDDDDD;
     text-align:center;
-  }
-  .selft-printing-area
-  {
-    width:100%;
-    height: 40pt;
-    max-height: max-content;
-  }
-  .header-for-self-printing-text
-  {
-    color:#DDDDDD;
-    font-family: 'Figma Hand', 'Finger Paint', 'Flamenco';
-    font-weight: bold;
-    line-height: 14pt;
-    text-align: left;
-    font-size: 12pt;
-  }
-  .selft-printing-text
-  {
-    color:#DDDDDD;
-    font-family: 'Figma Hand', 'Finger Paint', 'Flamenco';
-    font-weight: normal;
-    text-align: left;
-    font-size: 10pt;
-    line-height: 14pt;
-    padding-left: 80pt;
-  }
-
-  .general-heading
-  {
-    color:#DDDDDD;
+}
+.selft-printing-area
+{
+  width:100%;
+  height: 40pt;
+  max-height: max-content;
+}
+.header-for-self-printing-text
+{
+  font-family: 'Figma Hand', 'Finger Paint', 'Flamenco';
+  font-weight: bold;
+  line-height: 14pt;
+  text-align: left;
+  font-size: 12pt;
+}
+.selft-printing-text
+{
+  font-family: 'Figma Hand', 'Finger Paint', 'Flamenco';
+  font-weight: normal;
+  text-align: left;
+  font-size: 10pt;
+  line-height: 14pt;
+  padding-left: 80pt;
+}
+.general-heading
+{
     font-family: 'Flamenco';
     font-size: 18pt;
-  }
-  .general-text
-  {
-    line-height: 20pt;
-    color:#DDDDDD;
-    font-family: 'Cascadia Code';
-    font-size: 12pt;
-    font-weight: light;
-  }
-  .general-text b
+}
+.general-text
+{
+  line-height: 20pt;
+  font-family: 'Cascadia Code';
+  font-size: 12pt;
+  font-weight: light;
+}
+.general-text b
   {
     color: #B88A13;
     font-weight: light;
@@ -355,7 +324,9 @@ nav
   {
     text-align:left;
   }
-  /*Footer Part*/
+/*#endregion of SomeTextsStyles*/
+
+/*#region FooterItems*/
 footer
 {
   display:block;
@@ -368,7 +339,6 @@ footer
   right: 0px;
   left: 0px;
 
-  background-color: #1D1D1D !important;
   border-top: 2px solid #B88A13;
 
   justify-content: flex-start;
@@ -378,7 +348,6 @@ footer
 }
 .third-parties-links
 {
-  color:#DDDDDD;
   font-size: smaller;
 }
 .third-parties-links:hover
@@ -432,7 +401,6 @@ footer
 .right-footer-item
 {
   padding-right: 2%;
-  color:#dddddd;
   font-family: 'Fjalla One';
 }
 .logo-in-footer
@@ -441,6 +409,7 @@ footer
   width: auto;
   padding: 0%;
   margin: 0%;
+
   background-color: #DDDDDD;
 }
 .logo-in-footer:hover 
@@ -448,7 +417,9 @@ footer
   height:23px;
  box-shadow:  0px 0px 45px 3px #B88A13;
 }
+/*#endregion of FooterItems*/
 
+/*#region Tables*/
 table
 {
   width: 100%;
@@ -462,6 +433,9 @@ table td
 {
   padding: 5px;
 }
+/*#endregion of Tables*/
+
+/*#region MediaQueries*/
 @media only screen and (max-width: 700px)
 {
   .page-content-container
@@ -537,7 +511,6 @@ table td
   width: 100%;
   justify-content: left !important;
   flex-wrap: nowrap;
-  /*background-color: green;*/
   min-height:max-content;
   max-height: max-content;
 
@@ -552,7 +525,6 @@ table td
   margin: 0%;
 }
 }
-
 @media only screen and (max-width: 700px) and (min-width: 350px)
 {
   .selft-printing-area
@@ -561,7 +533,6 @@ table td
     height: 70pt;
   }
 }
-
 @media only screen and (max-width: 350px)
 {
   .selft-printing-area
@@ -570,7 +541,6 @@ table td
     height: 90pt;
   }
 }
-
 @media only screen and (max-width: 829px) and (min-width:399px)
 {
   .aria-download-buttons
@@ -583,7 +553,6 @@ table td
     width:33.33%;
   }
 }
-
 @media only screen and (max-width: 400px)
 {
   .aria-download-buttons
@@ -600,3 +569,54 @@ table td
     width:100%;
   }
 }
+/*#endregion of MediaQueries*/
+
+/*#region DarkAndLightMode*/
+/*#region DarkMode*/
+.dark-mode
+{
+  background-color: #1d1d1d !important;
+  background-image: url(../dark-background.jpg);
+  color: #dddddd !important;
+}
+.dark-nav-mode, .dark-footer-mode
+{
+  background-color: #1d1d1d !important;
+  color: #dddddd !important;
+}
+.dark-text-mode
+{
+  color: #dddddd !important;
+}
+.dark-text-mode-not-important
+{
+  color: #dddddd;
+}
+/*#endregion of DarkMode*/
+/*#region LightMode*/
+.light-mode
+{
+  background-color: #dddddd !important;
+  background-image: url(..//light-background.jpg);
+  color: #1d1d1d !important;
+}
+.light-nav-mode, .light-footer-mode
+{
+  background-color: #dddddd !important;
+  color: #1d1d1d !important;
+}
+.light-text-mode
+{
+  color: #1d1d1d !important;
+}
+.light-text-mode-not-important
+{
+  color: #1d1d1d;
+}
+
+.color-mode-button{
+  all: unset;
+  cursor: pointer;
+}
+/*#endregion of LightMode*/
+/*#endregion of DarkAndLightMode*/
